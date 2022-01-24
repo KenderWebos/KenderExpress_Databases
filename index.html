@@ -16,25 +16,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Iniciar sesion</a>
-              </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="../../html/menuClienteNatural.html">Registrarse como cliente <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-              <a class="nav-link" href="../../html/menuClienteEmpresa.html">Registrarse como empresa <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="../../html/MenuAdministrador.html">MenuAdministrador <span class="sr-only">(current)</span></a>
+              <a class="nav-link disabled" href="#">Iniciar sesion</a>
             </li>
           </ul>
         </div>
@@ -85,16 +71,44 @@
         </div>
     </center>
 
-    <footer style="position:fixed;
-                    width:100%;
-                    bottom: 0%;" class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgb(39, 39, 39); color: white;">
-          © 2022 Copyright:
-          <a class="text-white" href="https://www.kenderweb.tk/"> DesarrolladoraGenerica.cl </a>
+    </br>
+    </br>
+    <center>
+        <div style="width: 30%; border: gray 5px solid; padding: 25px; border-radius: 10px;">
+            <form action="../php/insertar/insertar_userEmail.php" method="post">
+                <h3>Registrate para recibir noticias</h3>
+    
+                <br>
+
+                <div class="form-group">
+                    <label>Nombre de usuario:</label>
+                    <input type="text" class="form-control" name="inputName" placeholder="Ingrese un nombre de usuario">
+                </div>
+    
+                <div class="form-group">
+                    <label>Correo</label>
+                    <input type="text" class="form-control" name="inputEmail" placeholder="Ingrese su correo electronico">
+                </div>
+    
+                <button type="submit" class="btn btn-success">Crear cuenta</button>
+                
+                </br>
+                </br>
+
+                <!--div class="alert alert-success" role="alert">
+                    Celipito jakemate!
+                </div-->
+            </form>
         </div>
-        <!-- Copyright -->
-      </footer>
+    </center>
+
+
+    <!--?php
+        include("ConexionDB.php");
+    ?-->
+
+    </br>
+    </br>
 
 </body>
 </html>
